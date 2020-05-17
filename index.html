@@ -2,48 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>What You Need To Know About COVID-19</title>
+    <title>Learn COVID-19</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <div class="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#index">Home</a></li>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#infection">Infection</a></li>
         <li><a href="#symptoms">Symptoms</a></li>
         <li><a href="#prevention">Prevention</a></li>
         <li><a href="#treatment">Treatment</a></li>
+        <li><a href="#global">Visualization</a></li>
         <li><a href="#works-cited">Works Cited</a></li>
-        <li><a href="#minigames">Minigames</a></li>
+        <li><a href="minigame.html">Minigame</a></li>
       </ul>
     </div>
 
+    <section class="color0" id="index">
+      <div class="box" id="home">
+        <h3>Welcome to Learn COVID-19</h3>
+          <p>This website is an educational and interactive experience regarding the novel coronavirus. </p>
+          <p>At Learn COVID-19, we aim to inform people about the virus itself, how to slow the spread, and other general information.</p>
+      </div>
+    </section>
+
     <section class="color1" id="overview">
       <div class="box">
-        <h3>Overview</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Overview</h3>
           <h5>Name</h5>
             <p>The name of the virus, SARS-CoV-2, refers to severe acute respiratory syndrome coronavirus 2. </p>
-            <p>The name of the disease, COVID-19, simply abbreviates "COronaVIrus Disease 2019"</p>
+            <p>The name of the disease, COVID-19, simply abbreviates "COronaVIrus Disease 2019."</p>
           
           <h5>Classification</h5>
-            <p>The SARS-CoV-2 is of the Coronoviridae family and the Betacoronavirus genus.</p>
-            <p>Coronoviridae refers to a family of viruses, known as coronaviruses, that are common in both animals and humans and primarily cause mild respiratory illnesses. Rarely, these viruses can become zoonotic, jumping from animal to human. Coronaviruses are defined by a viral envelope and single-stranded RNA genome, in addition to their crown(corona)-like spike structures.</p>
-            <p>Genus betacoronavirus includes deadly viruses like the MERS-CoV (Middle Eastern Respiratory Syndrome) and SARS-CoV (Severe Acute Respiratory Syndrome). All betacoronaviruses originated from bats.</p>
+          <p>The SARS-CoV-2 is of the Coronoviridae family and the Betacoronavirus genus.</p>
+          <p>Coronoviridae refers to a family of viruses, known as coronaviruses, that are common in both animals and humans and primarily cause mild respiratory illnesses. Rarely, these viruses can become zoonotic, jumping from animal to human. Coronaviruses are defined by a viral envelope and single-stranded RNA genome, in addition to their crown(corona)-like spike structures.</p>
+          <p>Genus betacoronavirus includes deadly viruses like the MERS-CoV (Middle Eastern Respiratory Syndrome) and SARS-CoV (Severe Acute Respiratory Syndrome). All betacoronaviruses originated from bats.</p>
       </div>
     </section>
 
     <section class="color2" id="infection">
       <div class="box">
-        <h3>Infection</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Infection</h3>
           <h5>Source</h5>
-            <p>The SARS-CoV-2 originated from bats, likely used an intermediate animal (once thought to be the pangolin, but likely not the case), and jumped to humans. Although the pandemic epicenter has been Wuhei, China, researchers believe that the first infection occurred elsewhere nearby, though this origin point is still unknown.
-              Initially thought to have originated from Wuhan, China, the origins of this virus have recently grown ambiguous. Researchers believe that the virus started months earlier than first proposed (September 13, 2019 as opposed to December 1, 2019) and in a different location. This information is based on the amount of mutation that already occurred in the virus and the lack of bats in the Wuhan marketplaces.</p>
+            <p>Initially thought to have originated from Wuhan, China, the origins of this virus have recently grown ambiguous. Researchers believe that the virus started months earlier than first proposed (September 13, 2019 as opposed to December 1, 2019) and in a different location. This information is based on the amount of mutation that already occurred in the virus and the lack of bats in the Wuhan marketplaces.</p>
           
           <h5>Spread</h5>
-            <p>COVID-19 primarily spreads between humans using respiratory droplets. When an infected individual speaks, sneezes, or coughs, these droplets are released and can contact another individual's face.</p>
-            <p>Alternatively, COVID-19 may spread when an individual contacts an infected surface and then their face. During rare circumstances, COVID-19 may spread from animal to human or human to animal.</p>
+            <p>The SARS-CoV-2 originated from bats, likely used an intermediate animal (once thought to be the pangolin, but likely not the case), and jumped to humans. Although the pandemic epicenter has been Wuhei, China, researchers believe that the first infection occurred elsewhere nearby, though this origin point is still unknown.</p>
+            <p>Initially thought to have originated from Wuhan, China, the origins of this virus have recently grown ambiguous. Researchers believe that the virus started months earlier than first proposed (September 13, 2019 as opposed to December 1, 2019) and in a different location. This information is based on the amount of mutation that already occurred in the virus and the lack of bats in the Wuhan marketplaces.</p>
 
           <h5>Structure</h5>
             <p>The SARS-CoV-2 has the following four main components:</p>
@@ -52,33 +65,43 @@
               <li>Envelope/Membrane - surround nucleocapsid as protection</li>
               <li>Spikes - allow for cell entry and inspired name (crown --> corona) </li>
             </ul>
+            <img src="diagram.jpg" alt="diagram of coronavirus">
 
           <h5>Molecular Processes</h5>
             <p>Generally, viruses enter and exploit host cells to produce viral copies.</p>
             <p>The SARS virus is no different. After entering the body, it primarily targets the lower respiratory tract, in which it hijacks lung cells.</p>
-            Specifically, the SARS virus uses its spike proteins (mentioned in the Structure section) to bind with a cell receptor protein known as ACE2 and enter the cell
+            <p>Specifically, the SARS virus uses its spike proteins (mentioned in the Structure section) to bind with a cell receptor protein known as ACE2 and enter the cell.</p>
             <p>Additionally, the SARS virus uses accessory proteins to evade immune responses, though the exact purpose of these proteins remains ambiguous. This ambiguity stems from studies that indicate that removing these proteins doesn't prevent immune response evasion, but makes the virus less pathogenic. </p>
       </div>
     </section>
  
     <section class="color3" id="symptoms">
       <div class="box">
-        <h3>Symptoms</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Symptoms</h3>
           <ul>
             <li>Cough</li>
             <li>Shortness or difficulty in breathing</li>
             <li>Fever</li>
+            <li>Chills</li>
             <li>Muscle tche</li>
             <li>Sore throat</li>
             <li>Sudden loss of taste or smell</li>
             <li>Less commonly: nausea, vomiting, diarrhea</li>
           </ul>
+          <p>If someone is showing any of these signs, seek emergency medical care immediately:</p>
+            <ul>
+              <li>Trouble breathing</li>
+              <li>Persistent pain or pressure in the chest</li>
+              <li>New confusion</li>
+              <li>Inability to wake or stay awake</li>
+              <li>Bluish lips or face</li>
+            </ul>
       </div>
     </section>
   
     <section class="color4" id="prevention">
       <div class="box">
-        <h3>Prevention</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Prevention</h3>
           <ul>
             <li>Wear a cloth face mask 
               <ul> 
@@ -89,19 +112,21 @@
             </li>
             <li>Social distancing - Stay away from large groups of people and avoid leaving your house unless necessary</li>
             <li>Staying home</li>
-            <li>Washing your hands properly</li>
             <li>Sanitize surfaces that are used frequently</li>
+            <li>Washing your hands properly</li>
           </ul>
+            <img src="wash.jpg" alt="how to wash your hands properly">
   
           <h5>"Flatten the curve"</h5>
             <p>Although stopping the spread of COVID-19 is the ultimate goal, slowing it is also crucial. Reducing the number of patients infected at a given time will allow health care workers, police, schools, and vaccine manufacturers to handle these cases properly. </p>
             <p>The main method of flattening the curve is to social distance and self-isolate so that the virus cannot spread as quickly. </p>
+            <img src="flatten-the-curve.jpg" alt="flatten the curve graph">
       </div>
     </section>
     
     <section class="color5" id="treatment">
       <div class="box">
-        <h3>Treatment</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Treatment</h3>
           <p>Currently, there is no approved drug, therapeutic, or vaccine against COVID-19.</p>
           <h5>Challenges:</h5>
             <ul> 
@@ -115,14 +140,64 @@
       </div>
     </section>
 
+    <section class="color6" id="global">
+      <div class="box">
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Visualization</h3>
+        <h5>Log Scale Graph of Confirmed Cases</h5>
+        <p>Indicates the number of cases since the day of the 100th case. Updated 16 May 2020.</p>
+        <img src="one.png" alt="log graph of cases">
+        <h5>Map of Confirmed Cases in Asia</h5>
+        <p>Updated 17 May 2020.</p>
+        <img src="two.png" alt="cases in asia">
+        <h5>Map of Confirmed Cases in Europe, Middle East, and North Africa</h5>
+        <p>Updated 17 May 2020.</p>
+        <img src="three.png" alt="cases in europe, middle east, north africa">
+      </div>
+    </section>
+
     <section class="color6" id="works-cited">
       <div class="box">
-        <h3>Works Cited</h3>
+        <h3 data-aos="fade-up" duration="10000" data-aos-easing="linear" data-aos-anchor-placement="center-center">Works Cited</h3>
         <p>
-          List the sources here, but that will be done later, lol. 
+          <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it</a>
+          <br>
+          <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html">https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html</a>
+          <br>
+          <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html</a>
+          <br>
+          <a href="https://www.usnews.com/news/best-countries/articles/2020-05-13/scientist-suggests-coronavirus-originated-outside-of-wuhan">https://www.usnews.com/news/best-countries/articles/2020-05-13/scientist-suggests-coronavirus-originated-outside-of-wuhan</a>
+          <br>
+          <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus">https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus</a>
+          <br>
+          <a href="https://dhhr.wv.gov/COVID-19/Pages/Nonpharmaceutical-Interventions.aspx">https://dhhr.wv.gov/COVID-19/Pages/Nonpharmaceutical-Interventions.aspx</a>
+          <br>
+          <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html</a>
+          <br>
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/28643204">https://www.ncbi.nlm.nih.gov/pubmed/28643204</a>
+          <br>
+          <a href="https://www.nytimes.com/article/flatten-curve-coronavirus.html">https://www.nytimes.com/article/flatten-curve-coronavirus.html</a>
+          <br>
+          <a href="https://www.livescience.com/how-coronavirus-infects-cells.html">https://www.livescience.com/how-coronavirus-infects-cells.html</a>
+          <br>
+          <a href="https://www.scientificamerican.com/article/how-coronaviruses-cause-infection-from-colds-to-deadly-pneumonia1/">https://www.scientificamerican.com/article/how-coronaviruses-cause-infection-from-colds-to-deadly-pneumonia1/</a>
+          <br>
+          <a href="https://www.genengnews.com/news/model-considers-coronavirus-and-contagious-disease-spread-as-complex-interactions/">https://www.genengnews.com/news/model-considers-coronavirus-and-contagious-disease-spread-as-complex-interactions/</a>
+          <br>
+          <a href="https://healthblog.uofmhealth.org/wellness-prevention/flattening-curve-for-covid-19-what-does-it-mean-and-how-can-you-help">https://healthblog.uofmhealth.org/wellness-prevention/flattening-curve-for-covid-19-what-does-it-mean-and-how-can-you-help</a>
+          <br>
+          <a href="https://www.theguardian.com/world/2020/may/16/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths">https://www.theguardian.com/world/2020/may/16/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths</a>
+          <br>
+          <a href="https://theprint.in/opinion/why-humans-have-themselves-to-blame-for-the-coronavirus-pandemic/402733/">https://theprint.in/opinion/why-humans-have-themselves-to-blame-for-the-coronavirus-pandemic/402733/</a>
+          <br>
+          <a href="https://www.myleaderpaper.com/how-to-wash-your-hands/image_8a90bfce-6942-11ea-937d-3b51036d97ba.html">https://www.myleaderpaper.com/how-to-wash-your-hands/image_8a90bfce-6942-11ea-937d-3b51036d97ba.html</a>
+
         </p>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   
   </body>
 </html>
